@@ -1,0 +1,296 @@
+body {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #1b1b21;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Reset */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
+/* Styles */
+
+/* header */
+header {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  color: #434455;
+}
+
+h1 > span {
+  font-size: 80px;
+}
+
+/* main */
+
+.main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 0 auto;
+}
+
+/* left side */
+
+.left-side {
+  display: grid;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: end;
+  justify-content: end;
+  text-align: end;
+}
+
+.software-label,
+.heart-label,
+.hardware-label {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+.software-label {
+  color: #1c8072;
+}
+
+.cloud-icon {
+  fill: #1c8072;
+}
+
+.curly-brackets {
+  font-weight: 100;
+  letter-spacing: 0.1px;
+  display: inline-block;
+  line-height: 1;
+  height: 100%;
+  align-items: center;
+}
+
+.heart-label {
+  color: #27ab19;
+}
+
+.arrow-left {
+  letter-spacing: 0.1px;
+  display: inline-block;
+  line-height: 0.86;
+  height: 100%;
+}
+
+.hardware-label {
+  color: #d1802e;
+}
+
+.servers-icon {
+  fill: #d1802e;
+}
+
+/* right side */
+
+.right-side {
+  display: grid;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.layers {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 24px;
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0f7fa;
+  padding: 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.layer:hover {
+  transform: translateY(-5px);
+}
+
+.application {
+  background-color: #03a9f4;
+}
+
+.icon {
+  fill: #1b1b21;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+}
+.icon-nav {
+  display: block;
+}
+
+.down {
+  transition: all 0.3s ease;
+}
+
+.up {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.description {
+  display: none;
+  padding: 8px;
+  margin-left: 48px;
+  margin-top: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.active {
+  display: block;
+}
+
+#description-application {
+  background-color: rgba(3, 169, 244, 0.4);
+}
+
+.presentation {
+  background-color: #00bcd4;
+}
+
+#description-presentation {
+  background-color: rgba(0, 188, 212, 0.4);
+}
+
+.session {
+  background-color: #009688;
+}
+
+#description-session {
+  background-color: rgba(0, 150, 136, 0.4);
+}
+
+.transport {
+  background-color: #8bc34a;
+}
+
+#description-transport {
+  background-color: rgba(139, 195, 74, 0.4);
+}
+
+.network {
+  background-color: #cddc39;
+}
+
+.network-icon {
+  stroke: black;
+}
+
+#description-network {
+  background-color: rgba(205, 220, 57, 0.4);
+}
+
+.data-link {
+  background-color: #ff9800;
+}
+
+#description-data-link {
+  background-color: rgba(255, 152, 0, 0.4);
+}
+.physical {
+  background-color: #f44336;
+}
+
+#description-physical {
+  background-color: rgba(244, 67, 54, 0.4);
+}
+
+aside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #434455;
+}
+
+.arrow-up-container,
+.arrow-down-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-up-container {
+  color: rgb(129, 71, 71);
+}
+
+.arrow-down-container {
+  color: rgb(65, 65, 108);
+}
+
+.data-mov {
+  font-size: 2em;
+  writing-mode: vertical-lr;
+  margin: 0;
+}
+
+.arrow-up,
+.arrow-down {
+  font-size: 10em;
+}
+
+footer {
+  display: flex;
+  grid-template-columns: 2fr 4fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 24px;
+  color: #434455;
+}

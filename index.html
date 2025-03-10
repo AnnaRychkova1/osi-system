@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSI Model Diagram</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalizer -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><span>7</span> Layers of OSI model</h1>
+    </header>
+    <main class="main">
+      <div>
+        <section class="layers software">
+          <div class="left-side software-label">
+            <div class="label-name">
+              <svg class="cloud-icon" width="64" height="64">
+                <use href="./images/symbol-defs.svg#cloud"></use>
+              </svg>
+              <p>Software Layers</p>
+            </div>
+            <div class="curly-brackets">&lbrace;</div>
+          </div>
+          <div class="right-side">
+            <div
+              class="layer application"
+              aria-describedby="description-application"
+            >
+              <div class="icon-frame">
+                <svg class="icon application-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#application"></use>
+                </svg>
+              </div>
+              <h2>7. Application</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-application">
+              <ul>
+                <li><p>End User Layer</p></li>
+                <li><p>HTTP, FTP, IRC, SSH, DNS</p></li>
+              </ul>
+            </div>
+            <div
+              class="layer presentation"
+              aria-describedby="description-presentation"
+            >
+              <div class="icon-frame">
+                <svg class="icon presentation-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#presentation"></use>
+                </svg>
+              </div>
+              <h2>6. Presentation</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-presentation">
+              <ul>
+                <li><p>Syntax Layer</p></li>
+                <li><p>SSL, SSH, IMAP, FTP, MPEG, JPEG</p></li>
+              </ul>
+            </div>
+
+            <div class="layer session" aria-describedby="description-session">
+              <div class="icon-frame">
+                <svg class="icon session-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#session"></use>
+                </svg>
+              </div>
+              <h2>5. Session</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-session">
+              <ul>
+                <li><p>Synch & Send to Port</p></li>
+                <li><p>API's, Sockets, WinSock</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="layers heart">
+          <div class="left-side heart-label">
+            <div class="label-name">
+              <p>Heart of OSI</p>
+            </div>
+            <div class="arrow-left">&#8594;</div>
+          </div>
+          <div class="right-side">
+            <div
+              class="layer transport"
+              aria-describedby="description-transport"
+            >
+              <div class="icon-frame">
+                <svg class="icon transport-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#transport"></use>
+                </svg>
+              </div>
+              <h2>4. Transport</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-transport">
+              <ul>
+                <li><p>End-to-End Connections</p></li>
+                <li><p>TCP, UDP</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="layers hardware">
+          <div class="left-side hardware-label">
+            <div class="label-name">
+              <svg class="servers-icon" width="64" height="64">
+                <use href="./images/symbol-defs.svg#servers"></use>
+              </svg>
+              <p>Hardware Layers</p>
+            </div>
+            <div class="curly-brackets">&lbrace;</div>
+          </div>
+          <div class="right-side">
+            <div class="layer network" aria-describedby="description-network">
+              <div class="icon-frame">
+                <svg class="icon network-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#network"></use>
+                </svg>
+              </div>
+              <h2>3. Network</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-network">
+              <ul>
+                <li><p>Packets</p></li>
+                <li><p>IP, ICMP, IPSec, IGMP</p></li>
+              </ul>
+            </div>
+            <div
+              class="layer data-link"
+              aria-describedby="description-data-link"
+            >
+              <div class="icon-frame">
+                <svg class="icon link-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#data-link"></use>
+                </svg>
+              </div>
+              <h2>2. Data Link</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-data-link">
+              <ul>
+                <li><p>Frames</p></li>
+                <li><p>Ethernet, PPP, Switch, Bridge</p></li>
+              </ul>
+            </div>
+            <div class="layer physical" aria-describedby="description-physical">
+              <div class="icon-frame">
+                <svg class="icon physical-icon" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#physical"></use>
+                </svg>
+              </div>
+              <h2>1. Physical</h2>
+              <button>
+                <svg class="icon-nav down" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#down"></use>
+                </svg>
+                <svg class="icon-nav up" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="description" id="description-physical">
+              <ul>
+                <li><p>Physical Structure</p></li>
+                <li><p>Coax, Fiber, Wireless, Hubs, Repeaters</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside>
+        <div class="arrow-down-container">
+          <div class="arrow-down">&#8595;</div>
+          <p class="data-mov">Sender</p>
+        </div>
+        <div class="arrow-up-container">
+          <div class="arrow-up">&#8593;</div>
+          <p class="data-mov">Receiver</p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <img src="./images/NCI_logo.png" alt="NCI Logo" width="192" height="80" />
+      <p>
+        Created by Anna Rychkova as part of the<br />
+        Computer Architecture Operating Systems and Networks course <br />
+        (HDSDEV_SEP24)
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
